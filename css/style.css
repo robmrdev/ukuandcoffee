@@ -1,0 +1,484 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*----------HEADER----------*/
+
+
+header {
+    background-color:#3C3C3C;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a img {
+    height:130px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 15px 10px;
+    font-size: 1.2em;
+}
+nav ul li a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #A9935A;
+}
+nav a {
+    padding: 10px;
+}
+
+
+/*----------MAIN----------*/
+
+/*----------INDEX---------*/
+h1 {
+    text-align: center;
+}
+h3 {
+    font-size: 2em;
+    padding: 25px;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+.hero {
+    background-image: url(../img/ukuhero.jpg);
+    background-size: cover;
+    background-position: center;
+    height:calc(100vh - 175px);
+    display:flex;
+    justify-content: center;
+    align-items: center
+}
+
+.hero p{
+    width: 60%;
+    height: 150px;
+    text-align: center;
+    color: #8B0000;
+    text-shadow: 1px 1px white;
+    padding-top: 10%;
+    font-size: 1.5em;
+}
+.wts{
+background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
+background-attachment: fixed;
+background-size: cover;
+height: 40vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.wts p{
+    color: #8B0000;
+    font-size: 2em;
+    padding: 20px;
+}
+.wts a {
+    text-decoration: none;
+    background-color: #8B0000;
+    color: #F5F5F5;
+    font-size: 1.5em;
+    padding: 12px;
+}
+.bottomindex{
+    display:flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+
+}
+.bottomindex div{
+    width: 60vh;
+    padding: 40px;
+}
+.bottomindex div img{
+    width: auto;
+    height: 60vh;
+}
+.onlinemc{
+    height: 40vh;
+    background-color: #3C3C3C;
+    color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.onlinemc h2 {
+    color: #A9935A;
+    padding: 30px;
+    font-size: 2em;
+}
+.onlinemc p {
+    padding: 20px;
+    font-size: 1.2em;
+    width: 70%;
+    text-align: center;
+}
+.onlinemc a {
+    text-decoration: none;
+    background-color: #8B0000;
+    color: #F5F5F5;
+    font-size: 1.5em;
+    padding: 12px;
+    margin: 25px;
+}
+.getintouch {
+    background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.getintouch p {
+    color: #8B0000;
+    font-size: 1.5em;
+}
+.getintouch h3 {
+    color: #8B0000;
+}
+.getintouch a {
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: #8B0000;
+    color:#F5F5F5;
+    margin: 30px;
+    padding: 12px;
+}
+
+/*---------NEW TO UKU---------*/
+.ukufund {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    height: 60vh;
+}
+.ukufund img {
+    height: 45vh;
+    padding: 15px;
+    background-color: white;
+}
+.ukufund div h3 {
+    color:#8B0000;
+}
+
+.ukufund div{
+    width:70vh;
+    padding: 40px;
+}
+.fatherut {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ukutypes {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ukutypes img {
+    width: 25vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.filecontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.file {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C3C3C;
+    color: #F5F5F5;
+    text-align: center;
+}
+.file img {
+    width: 98.5%;
+    margin-top: 1%;
+
+}
+.file h4{
+    color: #8B0000;
+    font-size: 1.4em;
+    text-shadow: 2px 2px black;
+}
+
+.file a{
+    text-decoration: none;
+    background-color: #8B0000;
+    color: #F5F5F5;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 20px;
+}
+
+/*---------ARTISTS---------*/
+.artists div {
+    display:flex;
+    flex-direction:column;
+
+}
+.artists div div div p{
+    font-size: 1.1em;
+    padding: 25px;
+
+}
+.artists div div div a{
+    text-decoration: none;
+    color: #F97F3F;
+}
+.artistright{
+    width: 80%;
+    text-align: justify;
+    align-self: flex-end;
+    background-color: #7F7979;
+    margin: 20px;
+}
+
+.artistleft{
+    width: 80%;
+    display:flex;
+    text-align: justify;
+    background-color: #7F7979;
+}
+
+.yt{
+    width: 50px;
+}
+.artistpic{
+    width: 300px;
+    padding: 15px;
+    background-color: #8d928c;
+    
+}
+
+
+/*----------CONTACT ME----------*/
+
+
+.contactme{
+    background: linear-gradient(rgba(169, 147, 90, 0.353), rgba(169, 147, 90, 0.381)), url(../img/ukubg2.jpg);
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    font-size: 3em;
+}
+.contacttop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contactemailcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 5vh;
+    margin-right: 5vh;
+    border: 2px solid #3C3C3C;
+}
+.contactemail {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contactemail p {
+    color: #8B0000;
+    font-size: 1.5em;
+}
+.contactemail a {
+    text-decoration: none;
+    margin: 20px;
+    color: #1d1d1d;
+}
+.contactemail img {
+    height: 50px;
+    margin: 20px;
+}
+.contactsmcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 5vh;
+    margin-left: 5vh;
+    border: 2px solid #3C3C3C;
+}
+.contactsm {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactsm img {
+    width: 30px;
+    margin: 20px;
+}
+.sm img {
+    width: 50px;
+    margin: 20px;
+}
+.contactbottom{
+    display: grid;
+    background-color: #3C3C3C;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh;
+}
+.cbimg {
+    grid-column: 1 / 2;
+    margin: 0 auto;
+}
+.contactbottom div img{
+    width: 50vh;
+    background-color: black;
+}
+.labelcontainer {
+    height: 60%;
+    width: 80%;
+    margin: 10% auto;
+    background-color: black;
+    color: #F5F5F5;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,6fr);
+}
+#name {
+    width: 100%;
+}
+#lastname {
+    width: 100%;
+}
+.labelcontainer a {
+    background-color: #8B0000;
+    color: #F5F5F5;
+}
+
+
+/*---------COURSES---------*/
+.coursewelcome {
+    background-image: url(../img/courseindex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.coursetypes {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.coursetop {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hdiwtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+.hdiwcontainer {
+    height: 40vh;
+    display: flex;
+}
+.coursetittle {
+    background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coursefile {
+    margin: 0 auto;
+    height: 25vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid #3C3C3C;
+    border-bottom: 2px solid #3C3C3C;
+}
+.coursefile a{
+    text-decoration: none;
+    background-color: #8B0000;
+    color: #F5F5F5;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 20px;
+}
+.coursefile img{
+    width: 20vh;
+}
+.coursedesc {
+    width: 30%;
+    text-align: center;
+}
+
+/*----------FOOTER----------*/
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+
+}
+footer img {
+    height: 130px;
+    margin: 20px;
+}
+footer div a img {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+.mail {
+    font-size: 1.3em;
+}
