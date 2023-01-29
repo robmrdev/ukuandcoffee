@@ -73,6 +73,7 @@ body{
 background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
 background-attachment: fixed;
 background-size: cover;
+background-position: center;
 height: 40vh;
 display: flex;
 flex-direction: column;
@@ -139,6 +140,7 @@ align-items: center;
     background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -280,6 +282,7 @@ align-items: center;
 .contactme{
     background: linear-gradient(rgba(169, 147, 90, 0.353), rgba(169, 147, 90, 0.381)), url(../img/ukubg2.jpg);
     background-size: cover;
+    background-position: center;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -352,38 +355,116 @@ align-items: center;
 }
 .contactbottom{
     display: grid;
-    background-color: #3C3C3C;
+    background-color: black;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh;
+    grid-template-rows: 60vh;
 }
 .cbimg {
     grid-column: 1 / 2;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .contactbottom div img{
-    width: 50vh;
+    height: 100%;
     background-color: black;
 }
+.labelbg {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .labelcontainer {
-    height: 60%;
+    height: 80%;
     width: 80%;
     margin: 10% auto;
-    background-color: black;
     color: #F5F5F5;
     grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5,6fr);
 }
-#name {
-    width: 100%;
+.labelcontainer p {
+    grid-column: 1 / 3;
+    text-align: center;
+    color: #A9935A;
+    font-size: 2em;
+    height: 10vh;
 }
-#lastname {
+.fullname {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.namecbcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+}
+.namecb {
+    width: 100%;
+    height: 5vh;
+}
+.lastnamecbcontainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.lastnamecb {
+    width: 100%;
+    height: 5vh;
+}
+.emailcbcontainer {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.emailcb {
+    width: 90%;
+    color: #8B0000;
+    height: 5vh;
+}
+.textareacb {
+    width: 90%;
+}
+.textareacbcontainer {
+    margin: 10px;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .labelcontainer a {
+    
     background-color: #8B0000;
+    width: 20%;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
     color: #F5F5F5;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
 }
 
 
