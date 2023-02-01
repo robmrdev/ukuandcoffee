@@ -373,21 +373,21 @@ body {
 }
 
 .contactbottom {
-    display: grid;
     background-color: black;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
 }
 .cbimg {
-    grid-column: 1 / 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: min(450px, 50%);
 }
 
 .contactbottom div img {
-    height: auto;
     width: 100%;
     object-fit: cover;
     background-color: black;
@@ -396,93 +396,81 @@ body {
 .labelbg {
     background-color: black;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 550px;
+    width: min(650px, 50%);
 }
 
 .labelcontainer {
     color: #F5F5F5;
-    grid-column: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 40px);
+    gap: 5%;
+    column-gap: 5%;
     width: 70%;
     height: 80%;
 }
 
 .labelcontainer p {
     grid-column: 1 / 3;
+    grid-row: 1 / 3;
     text-align: center;
     color: #A9935A;
-    font-size: 2em;
-    height: 10vh;
+    font-size: 1.8em;
+    margin: 10px;
 }
 
-.fullname {
+/* .fullname {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 5%;
-    padding-right: 5%;
-}
+} */
 
 .namecbcontainer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-
+    height: 100%;
 }
 
 .namecb {
     width: 100%;
-    height: 5vh;
+    height: 100%;
 }
 
 .lastnamecbcontainer {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
+    height: 100%;
 }
 
 .lastnamecb {
     width: 100%;
-    height: 5vh;
+    height: 100%;
 }
 
 .emailcbcontainer {
     grid-column: 1 / 3;
-    grid-row: 3 / 4;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
 }
 
 .emailcb {
-    width: 90%;
+    width: 100%;
     color: #8B0000;
-    height: 5vh;
+    height: 100%;
 }
 
 .textareacb {
-    width: 90%;
+    width: 100%;
 }
 
 .textareacbcontainer {
-    margin: 10px;
     grid-column: 1 / 3;
-    grid-row: 4 / 5;
+    grid-row: auto/ span 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,14 +479,10 @@ body {
 
 .labelcontainer a {
     background-color: #8B0000;
-    width: 20%;
-    height: 50%;
-    padding: 10px;
     margin: 0 auto;
     text-align: center;
     color: #F5F5F5;
     grid-column: 1 / 3;
-    grid-row: 5 / 6;
 }
 
 
@@ -617,15 +601,16 @@ footer {
 
 }
 
-footer img {
+footer a img {
     height: 130px;
     margin: 20px;
 }
 
 footer div a img {
-    width: 70px;
-    height: 70px;
-    padding: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
 }
 
 .mail {
@@ -660,6 +645,10 @@ footer div a img {
         font-size: 1.25em;
         margin: 4vh 10vh;
     }
+    .contactbottom {
+        height: 500px;
+    }
+
 
 /*------------------------CONTACT ME------------------------*/
     .contactemailcontainer{
@@ -671,19 +660,24 @@ footer div a img {
     .labelcontainer p {
         font-size: 1.5em;
     }
-
-    /* .namecbcontainer{
-        margin: 0;
+    .labelcontainer {
+        grid-template-rows: repeat(5, 30px);
+        gap: 4%;
+        column-gap: 4%;
+    }
+    .labelbg {
+        height: 500px;
+        flex: none;
+    }
+    .namecbcontainer {
+        width: 100%;
+        grid-column: 1 / 3;
     }
     .lastnamecbcontainer{
-        margin: 0;
+        width: 100%;
+        grid-column: 1 / 3;
     }
-    .emailcbcontainer{
-        margin: 0;
-    }
-    .textareacbcontainer{
-        margin: 0;
-    } */
+
     /*------------------------ARTISTS------------------------*/
     .artistscontainer {
         grid-template-columns: repeat(2, 1fr);
@@ -719,7 +713,18 @@ footer div a img {
         margin: 3vh 10vh;
     }
 /*------------------------CONTACT ME------------------------*/
-
+.contactbottom {
+    display: block;
+    height: 930px;
+}
+.labelbg {
+    width: 80%;
+    margin: 0 auto;
+}
+.cbimg{
+    height: auto;
+    width: 100%;
+}
 
 /*------------------------ARTISTS------------------------*/
 .artistscontainer {
