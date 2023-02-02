@@ -29,9 +29,18 @@ nav {
     border-color: #A9935A;
 }
 
+.d-flex .btn {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.d-flex .btn:hover {
+    background-color: #212529;
+    color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .75);
+}
 
 /*----------MAIN----------*/
-/*----------ALL SECCIONS APLIES----------*/
 
 
 /*----------INDEX---------*/
@@ -43,6 +52,7 @@ h2 {
     text-align: center;
     margin: 40px 25px;
 }
+
 h3 {
     font-size: 2em;
     padding: 25px;
@@ -62,6 +72,7 @@ body {
     justify-content: center;
     align-items: center
 }
+
 .hero p {
     width: 60%;
     height: 150px;
@@ -82,10 +93,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .wts p {
     color: #8B0000;
     font-size: 2em;
     margin: 40px 40px;
+    text-align: center;
 }
 
 .bottomwine {
@@ -95,6 +108,14 @@ body {
     font-size: 1.5em;
     padding: 12px;
     text-align: center;
+    transition-property: all;
+    transition-duration: 1s;
+    border-radius: 15%;
+}
+
+.bottomwine:hover {
+    background-color: #1d1d1d;
+    color: #A9935A;
 }
 
 .bottomindex {
@@ -104,6 +125,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .bottomindex div {
     margin: 20px 0;
     width: 60vh;
@@ -112,10 +134,12 @@ body {
     justify-content: center;
     text-align: center;
 }
+
 .bottomindex div img {
-    width: min( 300px, 60%);
+    width: min(300px, 60%);
     align-self: center;
 }
+
 .bottomindex h1 {
     margin-top: 10px;
 }
@@ -129,10 +153,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .onlinemc h2 {
     color: #A9935A;
     margin: 20px 25px;
 }
+
 .onlinemc p {
     padding: 20px;
     font-size: 1.2em;
@@ -152,10 +178,12 @@ body {
     align-items: center;
     text-align: center;
 }
+
 .getintouch h2 {
     color: #8B0000;
     margin: 10px 25px;
 }
+
 .getintouch p {
     color: #8B0000;
     font-size: 1.5em;
@@ -251,6 +279,7 @@ body {
     justify-content: center;
 
 }
+
 .artiststop {
     background-image: url(../img/artiststop.png);
     background-position: center;
@@ -282,9 +311,12 @@ body {
 }
 
 .artistimg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.artistimg:hover {
+    transform: scale(1.1);
 }
 
 .artistimg img {
@@ -316,6 +348,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .contactemailcontainer {
     display: flex;
     align-items: center;
@@ -325,6 +358,7 @@ body {
     margin-left: 0;
     border: 2px solid #3C3C3C;
 }
+
 .contactemail {
     height: 30vh;
     text-align: center;
@@ -333,19 +367,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .contactemail p {
     color: #8B0000;
     font-size: 1.5em;
 }
+
 .contactemail a {
     text-decoration: none;
     margin: 20px;
     color: #1d1d1d;
 }
+
 .contactemail img {
     height: 50px;
     margin: 20px;
 }
+
 .contactsmcontainer {
     display: flex;
     align-items: center;
@@ -355,6 +393,7 @@ body {
     margin-right: 0;
     border: 2px solid #3C3C3C;
 }
+
 .contactsm {
     height: 30vh;
     text-align: center;
@@ -363,10 +402,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .contactsm img {
     width: 30px;
     margin: 15px;
 }
+
 .sm img {
     width: 50px;
     margin: 20px;
@@ -379,6 +420,7 @@ body {
     justify-content: space-evenly;
     flex-direction: row-reverse;
 }
+
 .cbimg {
     display: flex;
     flex-direction: column;
@@ -421,14 +463,6 @@ body {
     font-size: 1.8em;
     margin: 10px;
 }
-
-/* .fullname {
-    grid-column: 1 / 3;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
 
 .namecbcontainer {
     width: 100%;
@@ -611,6 +645,11 @@ footer div a img {
     height: 50px;
     padding: 5px;
     margin: 10px;
+    transition: 1.2s;
+}
+
+footer div a img:hover {
+    transform: rotateZ(-20deg);
 }
 
 .mail {
@@ -620,16 +659,18 @@ footer div a img {
 
 /*--------------MEDIA QUERRY-------------*/
 
-@media screen and (max-width:768px){
-    .hero p{
+@media screen and (max-width:768px) {
+    .hero p {
         font-size: 1.25em;
         height: 200px;
     }
+
     .wts p {
         color: #8B0000;
         font-size: 1.5em;
-    
+
     }
+
     .bottomwine {
         text-decoration: none;
         background-color: #8B0000;
@@ -637,43 +678,52 @@ footer div a img {
         font-size: 1.3em;
         padding: 12px;
     }
+
     .onlinemc p {
         padding: 15px;
         font-size: 1em;
     }
+
     .getintouch p {
         font-size: 1.25em;
         margin: 4vh 10vh;
     }
+
     .contactbottom {
         height: 500px;
     }
 
 
-/*------------------------CONTACT ME------------------------*/
-    .contactemailcontainer{
+    /*------------------------CONTACT ME------------------------*/
+    .contactemailcontainer {
         margin: 5vh;
     }
-    .contactsmcontainer{
+
+    .contactsmcontainer {
         margin: 5vh;
     }
+
     .labelcontainer p {
         font-size: 1.5em;
     }
+
     .labelcontainer {
         grid-template-rows: repeat(5, 30px);
         gap: 4%;
         column-gap: 4%;
     }
+
     .labelbg {
         height: 500px;
         flex: none;
     }
+
     .namecbcontainer {
         width: 100%;
         grid-column: 1 / 3;
     }
-    .lastnamecbcontainer{
+
+    .lastnamecbcontainer {
         width: 100%;
         grid-column: 1 / 3;
     }
@@ -684,18 +734,20 @@ footer div a img {
     }
 }
 
-@media screen and (max-width:425px){
-/*--------------------------INDEX--------------------------*/
-    .hero p{
+@media screen and (max-width:425px) {
+
+    /*--------------------------INDEX--------------------------*/
+    .hero p {
         font-size: 1em;
         height: 200px;
     }
+
     .wts p {
         color: #8B0000;
         font-size: 1.2em;
-    
+
     }
-    
+
     .bottomwine {
         text-decoration: none;
         background-color: #8B0000;
@@ -703,33 +755,38 @@ footer div a img {
         font-size: 1em;
         padding: 12px;
     }
+
     .onlinemc p {
         padding: 10px;
         font-size: 0.8em;
     }
+
     .getintouch p {
         color: #8B0000;
         font-size: 1em;
         margin: 3vh 10vh;
     }
-/*------------------------CONTACT ME------------------------*/
-.contactbottom {
-    display: block;
-    height: 930px;
-}
-.labelbg {
-    width: 80%;
-    margin: 0 auto;
-}
-.cbimg{
-    height: auto;
-    width: 100%;
-}
 
-/*------------------------ARTISTS------------------------*/
-.artistscontainer {
-    grid-template-columns: 1fr;
-}
+    /*------------------------CONTACT ME------------------------*/
+    .contactbottom {
+        display: block;
+        height: 930px;
+    }
+
+    .labelbg {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cbimg {
+        height: auto;
+        width: 100%;
+    }
+
+    /*------------------------ARTISTS------------------------*/
+    .artistscontainer {
+        grid-template-columns: 1fr;
+    }
 }
 
 .section-p {
