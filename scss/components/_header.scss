@@ -1,0 +1,51 @@
+header {
+    nav {
+            font-size: 1.1em;
+        /*ojo con esto*/
+        div {
+            background-color: #212529;
+            color: rgba(255, 255, 255, .75);
+            border-color: rgba(255, 255, 255, .75);
+            a {
+                
+                img {
+                    height: 130px;
+                }
+            }
+            button {
+                span {
+
+                }
+            }
+            div {
+                ul {
+                    .nav-item{ 
+                        color: #A9935A;
+                        a {
+                        }
+                    }
+                }
+                .d-flex {
+                    .btn {
+                        transition-property: all;
+                        transition-duration: 1s;
+                    }
+                    input {
+
+                    }
+                    .btn-outline-success {
+                            color: #A9935A;
+                            border-color: #A9935A;
+                        &:hover{
+                            background-color: #212529;
+                            color: rgba(255, 255, 255, .75);
+                            border-color: rgba(255, 255, 255, .75);
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+}

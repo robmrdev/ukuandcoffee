@@ -1,0 +1,243 @@
+
+@media screen and (max-width:768px) {
+    .bottomwine {
+        text-decoration: none;
+        background-color: #8B0000;
+        color: #F5F5F5;
+        font-size: 1.3em;
+        padding: 12px;
+    }
+    main {
+        .hero {
+            p {
+                font-size: 1.25em;
+                height: 200px;
+            }
+        }
+        .wts{
+            p {
+                color: #8B0000;
+                font-size: 1.5em;
+            }
+        }
+        .onlinemc {
+            p {
+                padding: 15px;
+                font-size: 1em;
+            }
+        }
+        .getintouch {
+            p {
+                font-size: 1.25em;
+                margin: 4vh 10vh;
+            }
+        }
+        .contactbottom {
+            height: 500px;
+        }
+
+/*-----------------------------NEW TO UKU----------------------*/
+        .ukufund {
+                div {
+                    padding: 20px;
+                    h3 {
+                        font-size: 1.5em;
+                    }
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+        }
+        
+    /*------------------------ARTISTS------------------------*/
+        .artists {
+            .artistscontainer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .coursewelcome {
+            .coursetop {
+                grid-column: 2 / 4;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                h1 {
+                    grid-column: 1 / 3;
+                }
+                p {
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                    font-size: 0.8rem;
+                }
+                h2 {
+                    grid-column: 1 / 2;
+                    grid-row: 3 / 4;
+                }
+            }
+        }
+
+    /*------------------------COURSES------------------------*/
+
+        .hdiw {
+            .hdiwcontainer {
+                grid-template-columns: 1fr 1fr;
+                div {
+                    .hditicon {
+                        font-size: 70px;
+                    }
+                    h4 {
+                        font-size: 1rem;
+                    }
+                    .hdiwp {
+                        font-size: 0.75rem;
+                        
+                    }
+                }
+            }
+        }
+        .courselist {
+            .coursefile {
+                width: 90%;
+                font-size: 0.8rem;
+                img {
+                    width: 18vh;
+                }
+            }
+        }
+
+        /*------------------------CONTACT ME------------------------*/
+        .contacttop {
+            .contactemailcontainer {
+                margin: 5vh;
+            }
+            .contactsmcontainer {
+                margin: 5vh;
+            }
+            
+        }
+        .contactbottom {
+            .labelbg {
+                height: 500px;
+                flex: none;
+                .labelcontainer {
+                    grid-template-rows: repeat(5, 30px);
+                    gap: 4%;
+                    column-gap: 4%;
+                    p {
+                        font-size: 1.5em;
+                    }
+                    .namecbcontainer {
+                        width: 100%;
+                        grid-column: 1 / 3;
+                    }
+                
+                    .lastnamecbcontainer {
+                        width: 100%;
+                        grid-column: 1 / 3;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:425px) {
+
+    /*--------------------------INDEX--------------------------*/
+    main {
+        .hero {
+            p {
+                font-size: 1em;
+                height: 200px;
+            }
+        }
+
+        .wts {
+            p {
+                color: #8B0000;
+                font-size: 1.2em;
+            }
+        }
+
+        .bottomwine {
+            text-decoration: none;
+            background-color: #8B0000;
+            color: #F5F5F5;
+            font-size: 1em;
+            padding: 12px;
+        }
+
+        .onlinemc {
+            p {
+                padding: 10px;
+                font-size: 0.8em;
+            }
+        }
+
+        .getintouch {
+            p {
+                color: #8B0000;
+                font-size: 1em;
+                margin: 3vh 10vh;
+            }
+        }
+        .ukufund {
+            flex-direction: column-reverse;
+            img {
+                width: 70%;
+            }
+            div {
+                padding: 30px;
+                h3 {
+                    font-size: 1.2em;
+                }
+                p {
+                    width: 80%;
+                    margin: 0 auto;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+            /*------------------------ARTISTS------------------------*/
+        .artists {
+            .artistscontainer {
+                grid-template-columns: 1fr;
+            }
+        }
+
+            /*------------------------COURSES------------------------*/
+
+        .hdiw {
+            .hdiwcontainer {
+                grid-template-columns: 1fr;
+            }
+        }
+        .courselist {
+            .coursefile {
+                flex-direction: column;
+                img {
+                    width: 18vh;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        /*------------------------CONTACT ME------------------------*/
+        .contactbottom {
+            display: block;
+            height: 930px;
+            .labelbg{
+                width: 80%;
+                margin: 0 auto;
+            }
+            .cbimg {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}

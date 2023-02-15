@@ -15,7 +15,7 @@ header a img {
 }
 
 nav {
-    width: 100%;
+
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -70,7 +70,7 @@ body {
     height: calc(100vh - 175px);
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .hero p {
@@ -140,6 +140,7 @@ body {
     align-self: center;
 }
 
+/*ojo este*/
 .bottomindex h1 {
     margin-top: 10px;
 }
@@ -277,7 +278,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .artiststop {

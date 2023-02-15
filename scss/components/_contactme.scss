@@ -1,0 +1,178 @@
+main {
+    .contactme {
+        background: linear-gradient(rgba(169, 147, 90, 0.353), rgba(169, 147, 90, 0.381)), url(../img/ukubg2.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #F5F5F5;
+        font-size: 3em;
+        h1 {
+
+        }
+    }
+    .contacttop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        .contactemailcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 340px;
+            margin: 5vh;
+            margin-left: 0;
+            border: 2px solid #3C3C3C;
+            .contactemail {
+                height: 30vh;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 50px;
+                    margin: 20px;
+                }
+                p {
+                    color: #8B0000;
+                    font-size: 1.5em;
+                }
+                a {
+                    text-decoration: none;
+                    margin: 20px;
+                    color: #1d1d1d;
+                }
+            }
+        }
+        .contactsmcontainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 340px;
+            margin: 5vh;
+            margin-right: 0;
+            border: 2px solid #3C3C3C;
+            .contactsm {
+                height: 30vh;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .sm{
+                    img {
+                        width: 50px;
+                        margin: 20px;
+                    }
+                }
+                p {
+
+                }
+                div {
+                    a {
+                        img {
+                            width: 30px;
+                            margin: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contactbottom {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+        .labelbg {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 550px;
+            width: calc(min(650px, 50%));
+            .labelcontainer {
+                color: #F5F5F5;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: repeat(5, 40px);
+                gap: 5%;
+                column-gap: 5%;
+                width: 70%;
+                height: 80%;
+                p {
+                    grid-column: 1 / 3;
+                    grid-row: 1 / 3;
+                    text-align: center;
+                    color: #A9935A;
+                    font-size: 1.8em;
+                    margin: 10px;
+                }
+                .namecbcontainer {
+                    width: 100%;
+                    height: 100%;
+                    .namecb {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .lastnamecbcontainer {
+                    width: 100%;
+                    height: 100%;
+                    .lastnamecb {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .emailcbcontainer {
+                    grid-column: 1 / 3;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .emailcb {
+                        width: 100%;
+                        color: #8B0000;
+                        height: 100%;
+                    }
+                }
+                .textareacbcontainer {
+                    grid-column: 1 / 3;
+                    grid-row: auto/ span 2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .textareacb {
+                        width: 100%;
+                    }
+                }
+                a {
+                    background-color: #8B0000;
+                    margin: 0 auto;
+                    text-align: center;
+                    color: #F5F5F5;
+                    grid-column: 1 / 3;
+                }
+            }
+        }
+        .cbimg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: calc(min(450px, 50%));
+            img {
+                width: 100%;
+                object-fit: cover;
+                background-color: black;
+            }
+        }
+    }
+}

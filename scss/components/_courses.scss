@@ -1,0 +1,128 @@
+main {
+    .coursewelcome {
+        background-image: url(../img/courseindex.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        .coursetypes {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 80%;
+            a {
+                padding: 8px;
+            }
+        }
+        .coursetop {
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            h1 {
+
+            }
+            p {
+
+            }
+            p{
+
+            }
+        }
+    }
+    .hdiw {
+        .hdiwtitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20vh;
+            h2 {
+
+            }
+        }
+        .hdiwcontainer {
+            padding-left: 10vh;
+            padding-right: 10vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            div {
+                margin: 1vh;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .hditicon{
+                    font-size: 90px;
+                    color: #8B0000;
+                }
+                h4 {
+                    font-size: 1.25rem;
+                }
+                .hdiwp {
+
+                }
+            }
+        }
+    }
+    .coursetittle {
+        background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-x: center;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h2 {
+
+        }
+    }
+    .courselist {
+        .coursefile {
+            margin: 0 auto;
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-top: 2px solid #3C3C3C;
+            border-bottom: 2px solid #3C3C3C;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            img {
+                width: 20vh;
+            }
+            .coursedesc {
+                width: 30%;
+            }
+            .coursetime {
+                color: #8B0000;
+            }
+            .coursecost {
+                font-weight: bold;
+            }
+            a {
+                text-decoration: none;
+                background-color: #8B0000;
+                color: #F5F5F5;
+                font-size: 1.3em;
+                padding: 10px;
+                margin: 20px;
+            }
+
+        }
+    }
+    .courselist {
+
+    }
+}

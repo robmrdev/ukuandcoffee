@@ -1,0 +1,34 @@
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    a {
+        img {
+            height: 130px;
+            margin: 20px;
+        }
+    }
+    .mail {
+        font-size: 1.3em;
+    }
+    div {
+        a {
+            img {
+                width: 50px;
+                height: 50px;
+                padding: 5px;
+                margin: 10px;
+                transition: 1.2s;
+                &:hover {
+                    transform: rotateZ(-20deg);
+                }
+            }
+        }
+    }
+    p {
+
+    }
+}

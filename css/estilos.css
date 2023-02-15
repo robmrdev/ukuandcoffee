@@ -1,0 +1,627 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; }
+
+h1 {
+  text-align: center; }
+
+h2 {
+  text-align: center;
+  margin: 40px 25px; }
+
+h3 {
+  font-size: 2em;
+  padding: 25px; }
+
+.bottomwine {
+  text-decoration: none;
+  background-color: #8B0000;
+  color: #F5F5F5;
+  font-size: 1.5em;
+  padding: 12px;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 1s;
+  border-radius: 15%; }
+  .bottomwine:hover {
+    background-color: #1d1d1d;
+    color: #A9935A; }
+
+body {
+  background-color: #F5F5F5; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0; }
+  footer a img {
+    height: 130px;
+    margin: 20px; }
+  footer .mail {
+    font-size: 1.3em; }
+  footer div a img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    margin: 10px;
+    transition: 1.2s; }
+    footer div a img:hover {
+      transform: rotateZ(-20deg); }
+
+header nav {
+  font-size: 1.1em;
+  /*ojo con esto*/ }
+  header nav div {
+    background-color: #212529;
+    color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.75); }
+    header nav div a img {
+      height: 130px; }
+    header nav div div ul .nav-item {
+      color: #A9935A; }
+    header nav div div .d-flex .btn {
+      transition-property: all;
+      transition-duration: 1s; }
+    header nav div div .d-flex .btn-outline-success {
+      color: #A9935A;
+      border-color: #A9935A; }
+      header nav div div .d-flex .btn-outline-success:hover {
+        background-color: #212529;
+        color: rgba(255, 255, 255, 0.75);
+        border-color: rgba(255, 255, 255, 0.75); }
+
+main .hero {
+  background-image: url(../img/ukuhero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 175px);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .hero p {
+    width: 60%;
+    height: 150px;
+    text-align: center;
+    color: #8B0000;
+    text-shadow: 1px 1px white;
+    font-size: 1.5em; }
+
+main .wts {
+  background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .wts p {
+    color: #8B0000;
+    font-size: 2em;
+    margin: 40px 40px;
+    text-align: center; }
+
+main .bottomindex {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  flex-wrap: wrap; }
+  main .bottomindex div {
+    margin: 20px 0;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+  main .bottomindex div img {
+    width: calc(min(300px,60%));
+    align-self: center; }
+
+main .onlinemc {
+  height: 50vh;
+  background-color: #3C3C3C;
+  color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  main .onlinemc h2 {
+    color: #A9935A;
+    margin: 20px 25px; }
+  main .onlinemc p {
+    padding: 20px;
+    font-size: 1.2em;
+    width: 70%;
+    text-align: center; }
+
+main .getintouch {
+  background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  main .getintouch h2 {
+    color: #8B0000;
+    margin: 10px 25px; }
+  main .getintouch p {
+    color: #8B0000;
+    font-size: 1.5em;
+    margin: 5vh 10vh; }
+
+main .artists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  main .artists .artiststop {
+    background-image: url(../img/artiststop.png);
+    background-position: center;
+    background-position-x: center;
+    min-height: 350px;
+    width: 100%; }
+  main .artists h1 {
+    color: #3C3C3C;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh; }
+  main .artists p {
+    width: 70%;
+    text-align: center;
+    color: #3C3C3C;
+    margin-bottom: 10vh; }
+  main .artists .artistscontainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    main .artists .artistscontainer .artistimg {
+      transition-property: all;
+      transition-duration: 1s; }
+      main .artists .artistscontainer .artistimg:hover {
+        transform: scale(1.1); }
+      main .artists .artistscontainer .artistimg img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        padding: 15px; }
+
+main .contactme {
+  background: linear-gradient(rgba(169, 147, 90, 0.353), rgba(169, 147, 90, 0.381)), url(../img/ukubg2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #F5F5F5;
+  font-size: 3em; }
+
+main .contacttop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  main .contacttop .contactemailcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    margin: 5vh;
+    margin-left: 0;
+    border: 2px solid #3C3C3C; }
+    main .contacttop .contactemailcontainer .contactemail {
+      height: 30vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .contacttop .contactemailcontainer .contactemail img {
+        height: 50px;
+        margin: 20px; }
+      main .contacttop .contactemailcontainer .contactemail p {
+        color: #8B0000;
+        font-size: 1.5em; }
+      main .contacttop .contactemailcontainer .contactemail a {
+        text-decoration: none;
+        margin: 20px;
+        color: #1d1d1d; }
+  main .contacttop .contactsmcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    margin: 5vh;
+    margin-right: 0;
+    border: 2px solid #3C3C3C; }
+    main .contacttop .contactsmcontainer .contactsm {
+      height: 30vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .contacttop .contactsmcontainer .contactsm .sm img {
+        width: 50px;
+        margin: 20px; }
+      main .contacttop .contactsmcontainer .contactsm div a img {
+        width: 30px;
+        margin: 15px; }
+
+main .contactbottom {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row-reverse; }
+  main .contactbottom .labelbg {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    width: calc(min(650px, 50%)); }
+    main .contactbottom .labelbg .labelcontainer {
+      color: #F5F5F5;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, 40px);
+      gap: 5%;
+      column-gap: 5%;
+      width: 70%;
+      height: 80%; }
+      main .contactbottom .labelbg .labelcontainer p {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        text-align: center;
+        color: #A9935A;
+        font-size: 1.8em;
+        margin: 10px; }
+      main .contactbottom .labelbg .labelcontainer .namecbcontainer {
+        width: 100%;
+        height: 100%; }
+        main .contactbottom .labelbg .labelcontainer .namecbcontainer .namecb {
+          width: 100%;
+          height: 100%; }
+      main .contactbottom .labelbg .labelcontainer .lastnamecbcontainer {
+        width: 100%;
+        height: 100%; }
+        main .contactbottom .labelbg .labelcontainer .lastnamecbcontainer .lastnamecb {
+          width: 100%;
+          height: 100%; }
+      main .contactbottom .labelbg .labelcontainer .emailcbcontainer {
+        grid-column: 1 / 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        main .contactbottom .labelbg .labelcontainer .emailcbcontainer .emailcb {
+          width: 100%;
+          color: #8B0000;
+          height: 100%; }
+      main .contactbottom .labelbg .labelcontainer .textareacbcontainer {
+        grid-column: 1 / 3;
+        grid-row: auto/ span 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        main .contactbottom .labelbg .labelcontainer .textareacbcontainer .textareacb {
+          width: 100%; }
+      main .contactbottom .labelbg .labelcontainer a {
+        background-color: #8B0000;
+        margin: 0 auto;
+        text-align: center;
+        color: #F5F5F5;
+        grid-column: 1 / 3; }
+  main .contactbottom .cbimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(min(450px, 50%)); }
+    main .contactbottom .cbimg img {
+      width: 100%;
+      object-fit: cover;
+      background-color: black; }
+
+main .coursewelcome {
+  background-image: url(../img/courseindex.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr; }
+  main .coursewelcome .coursetypes {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80%; }
+    main .coursewelcome .coursetypes a {
+      padding: 8px; }
+  main .coursewelcome .coursetop {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+
+main .hdiw .hdiwtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; }
+
+main .hdiw .hdiwcontainer {
+  padding-left: 10vh;
+  padding-right: 10vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  main .hdiw .hdiwcontainer div {
+    margin: 1vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .hdiw .hdiwcontainer div .hditicon {
+      font-size: 90px;
+      color: #8B0000; }
+    main .hdiw .hdiwcontainer div h4 {
+      font-size: 1.25rem; }
+
+main .coursetittle {
+  background: linear-gradient(rgba(255, 255, 255, 0.353), rgba(255, 255, 255, 0.381)), url(../img/ukubgbb.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+main .courselist .coursefile {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #3C3C3C;
+  border-bottom: 2px solid #3C3C3C;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  main .courselist .coursefile img {
+    width: 20vh; }
+  main .courselist .coursefile .coursedesc {
+    width: 30%; }
+  main .courselist .coursefile .coursetime {
+    color: #8B0000; }
+  main .courselist .coursefile .coursecost {
+    font-weight: bold; }
+  main .courselist .coursefile a {
+    text-decoration: none;
+    background-color: #8B0000;
+    color: #F5F5F5;
+    font-size: 1.3em;
+    padding: 10px;
+    margin: 20px; }
+
+main .ukufund {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: black;
+  height: 60vh; }
+  main .ukufund img {
+    width: calc(min(500px,50%));
+    padding: 15px;
+    background-color: white; }
+  main .ukufund div {
+    text-align: center;
+    width: 70vh;
+    padding: 40px; }
+    main .ukufund div h3 {
+      color: #8B0000; }
+
+main .fatherut {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  main .fatherut .ukutypes {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    main .fatherut .ukutypes div img {
+      width: 25vh;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+
+main section .filecontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  main section .filecontainer .file {
+    margin: 20px;
+    width: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #3C3C3C;
+    color: #F5F5F5;
+    text-align: center; }
+    main section .filecontainer .file img {
+      width: 98.5%;
+      margin-top: 1%; }
+    main section .filecontainer .file h4 {
+      color: #8B0000;
+      font-size: 1.4em;
+      text-shadow: 2px 2px black; }
+    main section .filecontainer .file a {
+      text-decoration: none;
+      background-color: #8B0000;
+      color: #F5F5F5;
+      font-size: 1.3em;
+      padding: 10px;
+      margin: 20px; }
+
+@media screen and (max-width: 768px) {
+  .bottomwine {
+    text-decoration: none;
+    background-color: #8B0000;
+    color: #F5F5F5;
+    font-size: 1.3em;
+    padding: 12px; }
+  main {
+    /*-----------------------------NEW TO UKU----------------------*/
+    /*------------------------ARTISTS------------------------*/
+    /*------------------------COURSES------------------------*/
+    /*------------------------CONTACT ME------------------------*/ }
+    main .hero p {
+      font-size: 1.25em;
+      height: 200px; }
+    main .wts p {
+      color: #8B0000;
+      font-size: 1.5em; }
+    main .onlinemc p {
+      padding: 15px;
+      font-size: 1em; }
+    main .getintouch p {
+      font-size: 1.25em;
+      margin: 4vh 10vh; }
+    main .contactbottom {
+      height: 500px; }
+    main .ukufund div {
+      padding: 20px; }
+      main .ukufund div h3 {
+        font-size: 1.5em; }
+      main .ukufund div p {
+        font-size: 0.8rem; }
+    main .artists .artistscontainer {
+      grid-template-columns: repeat(2, 1fr); }
+    main .coursewelcome .coursetop {
+      grid-column: 2 / 4;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr; }
+      main .coursewelcome .coursetop h1 {
+        grid-column: 1 / 3; }
+      main .coursewelcome .coursetop p {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        font-size: 0.8rem; }
+      main .coursewelcome .coursetop h2 {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4; }
+    main .hdiw .hdiwcontainer {
+      grid-template-columns: 1fr 1fr; }
+      main .hdiw .hdiwcontainer div .hditicon {
+        font-size: 70px; }
+      main .hdiw .hdiwcontainer div h4 {
+        font-size: 1rem; }
+      main .hdiw .hdiwcontainer div .hdiwp {
+        font-size: 0.75rem; }
+    main .courselist .coursefile {
+      width: 90%;
+      font-size: 0.8rem; }
+      main .courselist .coursefile img {
+        width: 18vh; }
+    main .contacttop .contactemailcontainer {
+      margin: 5vh; }
+    main .contacttop .contactsmcontainer {
+      margin: 5vh; }
+    main .contactbottom .labelbg {
+      height: 500px;
+      flex: none; }
+      main .contactbottom .labelbg .labelcontainer {
+        grid-template-rows: repeat(5, 30px);
+        gap: 4%;
+        column-gap: 4%; }
+        main .contactbottom .labelbg .labelcontainer p {
+          font-size: 1.5em; }
+        main .contactbottom .labelbg .labelcontainer .namecbcontainer {
+          width: 100%;
+          grid-column: 1 / 3; }
+        main .contactbottom .labelbg .labelcontainer .lastnamecbcontainer {
+          width: 100%;
+          grid-column: 1 / 3; } }
+
+@media screen and (max-width: 425px) {
+  /*--------------------------INDEX--------------------------*/
+  main {
+    /*------------------------ARTISTS------------------------*/
+    /*------------------------COURSES------------------------*/
+    /*------------------------CONTACT ME------------------------*/ }
+    main .hero p {
+      font-size: 1em;
+      height: 200px; }
+    main .wts p {
+      color: #8B0000;
+      font-size: 1.2em; }
+    main .bottomwine {
+      text-decoration: none;
+      background-color: #8B0000;
+      color: #F5F5F5;
+      font-size: 1em;
+      padding: 12px; }
+    main .onlinemc p {
+      padding: 10px;
+      font-size: 0.8em; }
+    main .getintouch p {
+      color: #8B0000;
+      font-size: 1em;
+      margin: 3vh 10vh; }
+    main .ukufund {
+      flex-direction: column-reverse; }
+      main .ukufund img {
+        width: 70%; }
+      main .ukufund div {
+        padding: 30px; }
+        main .ukufund div h3 {
+          font-size: 1.2em; }
+        main .ukufund div p {
+          width: 80%;
+          margin: 0 auto;
+          font-size: 0.7rem; }
+    main .artists .artistscontainer {
+      grid-template-columns: 1fr; }
+    main .hdiw .hdiwcontainer {
+      grid-template-columns: 1fr; }
+    main .courselist .coursefile {
+      flex-direction: column; }
+      main .courselist .coursefile img {
+        width: 18vh; }
+      main .courselist .coursefile p {
+        font-size: 1rem; }
+    main .contactbottom {
+      display: block;
+      height: 930px; }
+      main .contactbottom .labelbg {
+        width: 80%;
+        margin: 0 auto; }
+      main .contactbottom .cbimg {
+        height: auto;
+        width: 100%; } }
