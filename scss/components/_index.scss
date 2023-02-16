@@ -11,7 +11,7 @@ main {
             width: 60%;
             height: 150px;
             text-align: center;
-            color: #8B0000;
+            color: $winecolor;
             text-shadow: 1px 1px white;
             font-size: 1.5em;
         }
@@ -27,7 +27,7 @@ main {
         justify-content: center;
         align-items: center;
         p {
-            color: #8B0000;
+            color: $winecolor;
             font-size: 2em;
             margin: 40px 40px;
             text-align: center;
@@ -59,14 +59,12 @@ main {
     }
     .onlinemc {
         height: 50vh;
-        background-color: #3C3C3C;
-        color: #F5F5F5;
-        display: flex;
+        background-color: $darkcolor;
+        color: $lightcolor;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %flexcenter;
         h2 {
-            color: #A9935A;
+            color: $earthcolor;
             margin: 20px 25px;
         }
         p {
@@ -82,17 +80,15 @@ main {
         background-size: cover;
         background-position: center;
         height: 50vh;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        @extend %flexcenter;
         h2 {
-            color: #8B0000;
+            color: $winecolor;
             margin: 10px 25px;
         }
         p {
-            color: #8B0000;
+            color: $winecolor;
             font-size: 1.5em;
             margin: 5vh 10vh;
         }

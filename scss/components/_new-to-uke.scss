@@ -1,10 +1,8 @@
 main {
     .ukufund {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         border-color: black;
         height: 60vh;
+        @extend %flexcenter;
         img {
             width: calc(min(500px,50%));
             padding: 15px;
@@ -20,9 +18,7 @@ main {
         }
     }
     .fatherut {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flexcenter;
         .ukutypes{
             width: 70%;
             display: flex;
@@ -43,13 +39,14 @@ main {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            margin: 0 auto;
             .file {
                 margin: 20px;
                 width: 50vh;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: space-between;
                 background-color: #3C3C3C;
                 color: #F5F5F5;
                 text-align: center;
@@ -63,12 +60,7 @@ main {
                     text-shadow: 2px 2px black;
                 }
                 a {
-                    text-decoration: none;
-                    background-color: #8B0000;
-                    color: #F5F5F5;
-                    font-size: 1.3em;
-                    padding: 10px;
-                    margin: 20px;
+                    margin-bottom: 10px;
                 }
             }
         }

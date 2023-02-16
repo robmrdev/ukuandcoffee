@@ -27,23 +27,12 @@ main {
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            h1 {
-
-            }
-            p {
-
-            }
-            p{
-
-            }
         }
     }
     .hdiw {
         .hdiwtitle {
-            display: flex;
-            align-items: center;
-            justify-content: center;
             height: 20vh;
+            @extend %flexcenter;
             h2 {
 
             }
@@ -56,10 +45,8 @@ main {
             div {
                 margin: 1vh;
                 text-align: center;
-                display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                @extend %flexcenter;
                 .hditicon{
                     font-size: 90px;
                     color: #8B0000;
@@ -79,13 +66,8 @@ main {
         background-size: cover;
         background-position-x: center;
         height: 20vh;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        h2 {
-
-        }
+        @extend %flexcenter;
     }
     .courselist {
         .coursefile {
@@ -111,18 +93,6 @@ main {
             .coursecost {
                 font-weight: bold;
             }
-            a {
-                text-decoration: none;
-                background-color: #8B0000;
-                color: #F5F5F5;
-                font-size: 1.3em;
-                padding: 10px;
-                margin: 20px;
-            }
-
         }
-    }
-    .courselist {
-
     }
 }

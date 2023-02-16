@@ -1,9 +1,7 @@
 main {
     .artists {
-        display: flex;
+        @extend %flexcenter;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         .artiststop{
             background-image: url(../img/artiststop.png);
             background-position: center;
@@ -12,7 +10,7 @@ main {
             width: 100%;
         }
         h1 {
-            color: #3C3C3C;
+            color: $darkcolor;
             text-align: center;
             margin-top: 10vh;
             margin-bottom: 5vh;
@@ -20,7 +18,7 @@ main {
         p {
             width: 70%;
             text-align: center;
-            color: #3C3C3C;
+            color: $darkcolor;
             margin-bottom: 10vh;
         }
         .artistscontainer {

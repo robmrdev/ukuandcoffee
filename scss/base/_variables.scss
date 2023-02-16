@@ -1,0 +1,13 @@
+/*--------------COLORS---------------*/
+$winecolor: #8B0000;
+$darkcolor: #3C3C3C;
+$earthcolor: #A9935A;
+$lightcolor: #F5F5F5;
+
+/*--------------EXTENDS---------------*/
+
+%flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
