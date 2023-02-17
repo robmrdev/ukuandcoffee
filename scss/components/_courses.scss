@@ -11,11 +11,9 @@ main {
         .coursetypes {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
-            display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
             height: 80%;
+            @include flexmix (space-between);
             a {
                 padding: 8px;
             }
@@ -23,10 +21,8 @@ main {
         .coursetop {
             grid-column: 2 / 3;
             grid-row: 1 / 4;
-            display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flexmix (space-evenly);
         }
     }
     .hdiw {
@@ -73,14 +69,12 @@ main {
         .coursefile {
             margin: 0 auto;
             width: 70%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
             border-top: 2px solid #3C3C3C;
             border-bottom: 2px solid #3C3C3C;
             text-align: center;
             padding-top: 20px;
             padding-bottom: 20px;
+            @include flexmix (space-around);
             img {
                 width: 20vh;
             }

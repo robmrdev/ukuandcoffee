@@ -11,3 +11,11 @@ $lightcolor: #F5F5F5;
     align-items: center;
     justify-content: center;
 }
+
+/*--------------MIXINS---------------*/
+
+@mixin flexmix ($justify){
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}

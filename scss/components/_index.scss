@@ -4,9 +4,7 @@ main {
         background-size: cover;
         background-position: center;
         height: calc(100vh - 175px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %flexcenter;
         p {
             width: 60%;
             height: 150px;
@@ -22,33 +20,24 @@ main {
         background-size: cover;
         background-position: center;
         height: 40vh;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %flexcenter;
         p {
             color: $winecolor;
             font-size: 2em;
             margin: 40px 40px;
             text-align: center;
         }
-        a {
-
-        }
     }
     .bottomindex {
-        display: flex;
-        justify-content: center;
         text-align: justify;
-        align-items: center;
         flex-wrap: wrap;
+        @extend %flexcenter;
         div {
             margin: 20px 0;
             width: 60vh;
-            display: flex;
             flex-direction: column;
-            justify-content: center;
-            text-align: center;
+            @extend %flexcenter;
         }
         div {
             img {

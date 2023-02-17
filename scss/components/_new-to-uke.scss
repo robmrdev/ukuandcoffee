@@ -21,10 +21,8 @@ main {
         @extend %flexcenter;
         .ukutypes{
             width: 70%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
             flex-wrap: wrap;
+            @include flexmix (space-around);
             div{
                 img{
                     width: 25vh;
@@ -36,17 +34,14 @@ main {
     }
     section {
         .filecontainer {
-            display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
             margin: 0 auto;
+            @include flexmix (space-around);
             .file {
                 margin: 20px;
                 width: 50vh;
-                display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
+            @include flexmix (space-between);
                 background-color: #3C3C3C;
                 color: #F5F5F5;
                 text-align: center;
@@ -61,6 +56,10 @@ main {
                 }
                 a {
                     margin-bottom: 10px;
+                }
+                p {
+                    height: 12vh;
+                    @extend %flexcenter;
                 }
             }
         }

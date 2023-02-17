@@ -68,10 +68,8 @@ main {
     }
     .contactbottom {
         background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
         flex-direction: row-reverse;
+        @include flexmix (space-evenly);
         .labelbg {
             background-color: black;
             height: 550px;

@@ -1,10 +1,11 @@
 /*--------------COLORS---------------*/
 /*--------------EXTENDS---------------*/
-main .onlinemc, main .getintouch, main .artists, main .contactme, main .contacttop, main .contacttop .contactemailcontainer, main .contacttop .contactemailcontainer .contactemail, main .contacttop .contactsmcontainer, main .contacttop .contactsmcontainer .contactsm, main .contactbottom .labelbg, main .contactbottom .labelbg .labelcontainer .emailcbcontainer, main .contactbottom .labelbg .labelcontainer .textareacbcontainer, main .contactbottom .cbimg, main .hdiw .hdiwtitle, main .hdiw .hdiwcontainer div, main .coursetittle, main .ukufund, main .fatherut {
+footer, main .hero, main .wts, main .bottomindex, main .bottomindex div, main .onlinemc, main .getintouch, main .artists, main .contactme, main .contacttop, main .contacttop .contactemailcontainer, main .contacttop .contactemailcontainer .contactemail, main .contacttop .contactsmcontainer, main .contacttop .contactsmcontainer .contactsm, main .contactbottom .labelbg, main .contactbottom .labelbg .labelcontainer .emailcbcontainer, main .contactbottom .labelbg .labelcontainer .textareacbcontainer, main .contactbottom .cbimg, main .hdiw .hdiwtitle, main .hdiw .hdiwcontainer div, main .coursetittle, main .ukufund, main .fatherut, main section .filecontainer .file p {
   display: flex;
   align-items: center;
   justify-content: center; }
 
+/*--------------MIXINS---------------*/
 * {
   margin: 0;
   padding: 0;
@@ -41,10 +42,7 @@ body {
 
 footer {
   width: 100%;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 30px 0; }
   footer a img {
     height: 130px;
@@ -82,10 +80,7 @@ main .hero {
   background-image: url(../img/ukuhero.jpg);
   background-size: cover;
   background-position: center;
-  height: calc(100vh - 175px);
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  height: calc(100vh - 175px); }
   main .hero p {
     width: 60%;
     height: 150px;
@@ -100,10 +95,7 @@ main .wts {
   background-size: cover;
   background-position: center;
   height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  flex-direction: column; }
   main .wts p {
     color: #8B0000;
     font-size: 2em;
@@ -111,18 +103,12 @@ main .wts {
     text-align: center; }
 
 main .bottomindex {
-  display: flex;
-  justify-content: center;
   text-align: justify;
-  align-items: center;
   flex-wrap: wrap; }
   main .bottomindex div {
     margin: 20px 0;
     width: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center; }
+    flex-direction: column; }
   main .bottomindex div img {
     width: calc(min(300px,60%));
     align-self: center; }
@@ -239,10 +225,10 @@ main .contacttop {
 
 main .contactbottom {
   background-color: black;
+  flex-direction: row-reverse;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row-reverse; }
+  justify-content: space-evenly; }
   main .contactbottom .labelbg {
     background-color: black;
     height: 550px;
@@ -311,20 +297,20 @@ main .coursewelcome {
   main .coursewelcome .coursetypes {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
-    display: flex;
     flex-direction: column;
+    height: 80%;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 80%; }
+    justify-content: space-between; }
     main .coursewelcome .coursetypes a {
       padding: 8px; }
   main .coursewelcome .coursetop {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; }
 
 main .hdiw .hdiwtitle {
   height: 20vh; }
@@ -355,14 +341,14 @@ main .coursetittle {
 main .courselist .coursefile {
   margin: 0 auto;
   width: 70%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border-top: 2px solid #3C3C3C;
   border-bottom: 2px solid #3C3C3C;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
   main .courselist .coursefile img {
     width: 20vh; }
   main .courselist .coursefile .coursedesc {
@@ -388,25 +374,26 @@ main .ukufund {
 
 main .fatherut .ukutypes {
   width: 70%;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap; }
+  justify-content: space-around; }
   main .fatherut .ukutypes div img {
     width: 25vh;
     padding-top: 20px;
     padding-bottom: 20px; }
 
 main section .filecontainer {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
   main section .filecontainer .file {
     margin: 20px;
     width: 50vh;
-    display: flex;
     flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #3C3C3C;
@@ -421,6 +408,8 @@ main section .filecontainer {
       text-shadow: 2px 2px black; }
     main section .filecontainer .file a {
       margin-bottom: 10px; }
+    main section .filecontainer .file p {
+      height: 12vh; }
 
 @media screen and (max-width: 768px) {
   .bottomwine {
