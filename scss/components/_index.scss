@@ -38,6 +38,9 @@ main {
             width: 60vh;
             flex-direction: column;
             @extend %flexcenter;
+            p {
+                width: 85%;
+            }
         }
         div {
             img {

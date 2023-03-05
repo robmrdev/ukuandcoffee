@@ -109,6 +109,8 @@ main .bottomindex {
     margin: 20px 0;
     width: 60vh;
     flex-direction: column; }
+    main .bottomindex div p {
+      width: 85%; }
   main .bottomindex div img {
     width: calc(min(300px,60%));
     align-self: center; }
@@ -367,10 +369,12 @@ main .ukufund {
     background-color: white; }
   main .ukufund div {
     text-align: center;
-    width: 70vh;
+    width: 60%;
     padding: 40px; }
-    main .ukufund div h3 {
+    main .ukufund div h1 {
       color: #8B0000; }
+    main .ukufund div p {
+      width: 90%; }
 
 main .fatherut .ukutypes {
   width: 70%;
@@ -496,6 +500,7 @@ main section .filecontainer {
   /*--------------------------INDEX--------------------------*/
   main {
     /*------------------------ARTISTS------------------------*/
+    /*------------------------NEW TO UKE------------------------*/
     /*------------------------COURSES------------------------*/
     /*------------------------CONTACT ME------------------------*/ }
     main .hero p {
@@ -531,6 +536,8 @@ main section .filecontainer {
           font-size: 0.7rem; }
     main .artists .artistscontainer {
       grid-template-columns: 1fr; }
+    main .ukufund div p {
+      width: 90%; }
     main .hdiw .hdiwcontainer {
       grid-template-columns: 1fr; }
     main .courselist .coursefile {
